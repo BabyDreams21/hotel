@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A7E0088-DDA3-4AE2-99D1-5961C69C899C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>hotel</RootNamespace>
+    <AssemblyName>hotel</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.9\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckIn.Designer.cs">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainAdmin.Designer.cs">
+      <DependentUpon>MainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainLogin.Designer.cs">
+      <DependentUpon>MainLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainFrontOffice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainFrontOffice.Designer.cs">
+      <DependentUpon>MainFrontOffice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Employee.Designer.cs">
+      <DependentUpon>Master Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Item.Designer.cs">
+      <DependentUpon>Master Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Master Room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master Room.Designer.cs">
+      <DependentUpon>Master Room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterFoodAndDrinks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterFoodAndDrinks.Designer.cs">
+      <DependentUpon>MasterFoodAndDrinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MasterRoomType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterRoomType.Designer.cs">
+      <DependentUpon>MasterRoomType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportCheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportCheckIn.Designer.cs">
+      <DependentUpon>ReportCheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportGuest.Designer.cs">
+      <DependentUpon>ReportGuest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestAdditionalItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestAdditionalItem.Designer.cs">
+      <DependentUpon>RequestAdditionalItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reservation.Designer.cs">
+      <DependentUpon>Reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckIn.resx">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainAdmin.resx">
+      <DependentUpon>MainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainFrontOffice.resx">
+      <DependentUpon>MainFrontOffice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainLogin.resx">
+      <DependentUpon>MainLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Employee.resx">
+      <DependentUpon>Master Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Item.resx">
+      <DependentUpon>Master Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master Room.resx">
+      <DependentUpon>Master Room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterFoodAndDrinks.resx">
+      <DependentUpon>MasterFoodAndDrinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MasterRoomType.resx">
+      <DependentUpon>MasterRoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportCheckIn.resx">
+      <DependentUpon>ReportCheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportGuest.resx">
+      <DependentUpon>ReportGuest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestAdditionalItem.resx">
+      <DependentUpon>RequestAdditionalItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reservation.resx">
+      <DependentUpon>Reservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\hotel.backuphotelDataSet3TableAdapters.reqitem_vwTableAdapter.datasource" />
+    <None Include="Properties\DataSources\hotel.backuphotelDataSet3TableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\hotel.backuphotelDataSet3TableAdapters.TableAdapterManager.datasource" />
+    <None Include="Properties\DataSources\Reservation.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
